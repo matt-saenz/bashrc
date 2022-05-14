@@ -5,7 +5,7 @@ green='\[\033[32m\]'
 purple='\[\033[35m\]'
 yellow='\[\033[33m\]'
 no_color='\[\033[0m\]'
-PS1="$green\u $purple\h $yellow\w$no_color\n\$ "
+PS1="${green}\u ${purple}\h ${yellow}\w${no_color}\n\$ "
 
 
 # Useful aliases
