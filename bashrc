@@ -1,9 +1,9 @@
 # Preferred prompt
 # https://www.gnu.org/software/bash/manual/bash.html#Controlling-the-Prompt
 
-green='\[\033[32m\]'
-purple='\[\033[35m\]'
-yellow='\[\033[33m\]'
+green='\[\033[0;32m\]'
+purple='\[\033[0;35m\]'
+yellow='\[\033[0;33m\]'
 no_color='\[\033[0m\]'
 PS1="${green}\u ${purple}\h ${yellow}\w${no_color}\n\$ "
 
