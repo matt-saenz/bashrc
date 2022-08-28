@@ -33,6 +33,11 @@ case "${OSTYPE}" in
     *) echo "bashrc: Alias for ls not specified for ${OSTYPE}";;
 esac
 
+# These will inherit from above if set
+alias ll='ls -l'
+alias la='ls -a'
+alias lal='ls -al'
+
 # Aliases for commands like git pull/push excluded for safety
 alias gs='git status'
 alias gd='git diff'
