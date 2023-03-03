@@ -12,19 +12,14 @@ PS1="${green}\u ${purple}\h ${yellow}\w${no_color}\n\$ "
 # https://www.gnu.org/software/bash/manual/bash.html#Aliases
 # https://www.gnu.org/software/bash/manual/bash.html#index-alias
 
-# For going up (up to 5 levels)
-dots=../
-alias cd..="cd ${dots}"
-for i in {2..5}; do
-    dots=${dots}../
-    alias cd..${i}="cd ${dots}"
-done
-
-alias rm='rm -i'
+alias ..='cd ..'
+alias rm='rm -iv'
 alias mv='mv -iv'
 alias cp='cp -iv'
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
+alias mkdir='mkdir -v'
+alias rmdir='rmdir -v'
 
 # Special treatment of ls
 case "${OSTYPE}" in
@@ -33,10 +28,7 @@ case "${OSTYPE}" in
     *) echo "bashrc: Alias for ls not specified for ${OSTYPE}";;
 esac
 
-# These will inherit from above if set
-alias ll='ls -l'
-alias la='ls -a'
-alias lal='ls -al'
+alias l='ls -al'
 
 # Aliases for commands like git pull/push excluded for safety
 alias gs='git status --short --branch'
