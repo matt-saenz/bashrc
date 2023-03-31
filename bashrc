@@ -42,3 +42,13 @@ alias gcm='git commit -m'
 alias glo='git log --oneline'
 alias gf='git fetch'
 alias gfs='git fetch && git status --short --branch'
+
+# Repo setup tools
+
+function mkreadme {
+    echo "# $(basename ${PWD})" > README.md
+}
+
+function ghignore {
+    wget -O .gitignore https://raw.githubusercontent.com/github/gitignore/main/${1}.gitignore
+}
