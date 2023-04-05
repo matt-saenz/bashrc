@@ -36,12 +36,12 @@ alias gd='git diff'
 alias gb='git branch'
 alias gch='git checkout'
 alias ga='git add'
-alias gap='git add -p'
 alias gc='git commit'
 alias gcm='git commit -m'
 alias glo='git log --oneline'
 alias gf='git fetch'
 alias gfs='git fetch && git status --short --branch'
+
 
 # Repo setup tools
 
