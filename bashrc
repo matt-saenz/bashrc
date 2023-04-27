@@ -22,6 +22,7 @@ alias mkdir='mkdir -v'
 alias rmdir='rmdir -v'
 alias ls='ls -F --color=auto'
 alias l='ls -al'
+alias diff='diff -u --color=auto'
 
 # Aliases for commands like git pull/push excluded for safety
 alias gs='git status --short --branch'
