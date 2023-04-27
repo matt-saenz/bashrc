@@ -20,14 +20,7 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias mkdir='mkdir -v'
 alias rmdir='rmdir -v'
-
-# Special treatment of ls
-case "${OSTYPE}" in
-    darwin*) alias ls='ls -FG';;  # macOS
-    linux-gnu) alias ls='ls -F --color=auto';;
-    *) echo "bashrc: Alias for ls not specified for ${OSTYPE}";;
-esac
-
+alias ls='ls -F --color=auto'
 alias l='ls -al'
 
 # Aliases for commands like git pull/push excluded for safety
