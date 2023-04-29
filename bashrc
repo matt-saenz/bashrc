@@ -24,7 +24,6 @@ alias ls='ls -F --color=auto'
 alias l='ls -al'
 alias diff='diff -u --color=auto'
 
-# Aliases for commands like git pull/push excluded for safety
 alias gs='git status --short --branch'
 alias gd='git diff'
 alias gb='git branch'
@@ -38,6 +37,7 @@ alias gfs='git fetch && git status --short --branch'
 
 
 # Repo setup tools
+# https://www.gnu.org/software/bash/manual/bash.html#Shell-Functions
 
 function mkreadme {
     echo "# $(basename ${PWD})" > README.md
