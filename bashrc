@@ -34,7 +34,8 @@ alias gcm='git commit -m'
 alias glo='git log --oneline'
 alias gf='git fetch'
 alias gfs='git fetch && git status --short --branch'
-alias gm='git merge --no-ff'
+alias gm='git merge'
+alias gmc='git merge --no-ff --no-edit'
 
 
 # Repo setup tools
